@@ -102,8 +102,6 @@ This homelab spans **two physical locations** connected over ISP uplinks. The pr
 </details>
 <summary>Node1B VM table</summary>
 
-## VM table
-
 | VM ID | Role | vCPU | RAM GB | Disk GB | GPU | Notes |
 |---|---|---:|---:|---:|---|---|
 | web-apache-1 | Apache2 web server 1 | 1.0 | 2.0 | 32.0 | no | Off-site mirror of Node1A Apache2 |
