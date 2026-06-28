@@ -87,6 +87,18 @@ This homelab spans **two physical locations** connected over ISP uplinks. The pr
 | mon-zabbix        | Zabbix monitoring | 4 | 16 | 256 | ❌ |
 
 </details>
+<summary>Node1B VM table</summary>
+
+## VM table
+
+| VM ID | Role | vCPU | RAM GB | Disk GB | GPU | Notes |
+|---|---|---:|---:|---:|---|---|
+| web-apache-1 | Apache2 web server 1 | 1.0 | 2.0 | 32.0 | no | Off-site mirror of Node1A Apache2 |
+| web-apache-2 | Apache2 web server 2 | 2.0 | 32.0 | no | no | Second Apache2 instance |
+| net-nginx | NGINX reverse proxy | 2.0 | 32.0 | no | no | Fronts web UIs at off-site |
+| net-pihole | Pi-hole DNS | 2.0 | 32.0 | no | no | DNS blocker for off-site network |
+| pve-ftp | FTP server | 1.0 | 16.0 | No | no | FTP service for nodes |
+| mon-zabbix | Zabbix monitoring | 4.0 | 16.0 | 256.0 | no | Same config as Node1 VM profile |
 
 ---
 
