@@ -195,6 +195,9 @@ This homelab spans **two physical locations** connected over ISP uplinks. The pr
 | Node | Pool | Topology | Usable | Purpose |
 |------|------|----------|--------|---------|
 | Node3 | Media vdev 1 | RAIDZ3 (16× 20 TB HDD) | ~260 TB | Primary media |
+| Node4 | Docs/IT | RAIDZ1 (4x 8TB HDD) | ~24 TB | documents, ISOs, templates |
+| Node4 | Musics | RAIDZ1 (4x 16TB HDD) | ~48 TB | Primary musics |
+| Node4 | DVideos | RAIDZ1 (3x 4TB SSD) | ~8 TB | videos, photos for current projects |
 | Node5A | Backup pool | RAIDZ2 (8× 20 TB HDD) | ~120 TB | On-site backup |
 | Node5B | Backup pool | RAIDZ2 (8× 20 TB HDD) | ~120 TB | Off-site backup |
 
