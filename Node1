@@ -1,1 +1,2 @@
-
+## Node1A ##
+Primary compute host running the main Proxmox workload. This node is designed as the highest-performance part of the homelab and handles general virtualization, GPU-accelerated workloads, editing, and lab services. It has a very large memory footprint, fast NVMe-based local storage, a discrete GPU, and both 25G and 10G networking, making it the main platform for dense VM hosting and performance-sensitive tasks.
