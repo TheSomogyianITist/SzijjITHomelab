@@ -3,6 +3,7 @@
 
 > Multi-node virtualization · NAS storage · Networking · Backup · Off-site cluster  
 > *Last updated: June 2026*
+> NOTE: That's an ongoing project! The described config are just plans (almost everything)
 
 ---
 
