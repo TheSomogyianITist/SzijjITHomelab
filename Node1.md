@@ -1,8 +1,6 @@
-## Node1A
-## Nodes
-
 ### Node1A — Primary Compute (Proxmox VE)
 
+Configuration:
 | Category | Specification |
 |----------|--------------|
 | Board        | Supermicro X11DPi-NT |
