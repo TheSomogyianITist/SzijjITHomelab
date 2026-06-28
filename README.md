@@ -86,6 +86,19 @@ This homelab spans **two physical locations** connected over ISP uplinks. The pr
 | pve-ftp           | FTP server | 1 | 16 | — | ❌ |
 | mon-zabbix        | Zabbix monitoring | 4 | 16 | 256 | ❌ |
 
+---
+
+### Node1B — Off-site Compute (Proxmox VE)
+
+| Category | Specification |
+|----------|--------------|
+| Platform | Minisforum MS-A2 |
+| CPU | AMD Ryzen 9 9955HX |
+| RAM | 64 GB DDR5 SO-DIMM |
+| Boot/VM | 2× 1 TB NVMe mirror |
+| NIC | Dual 10G SFP + dual 2.5G LAN |
+| OS | Proxmox VE |
+
 </details>
 <summary>Node1B VM table</summary>
 
@@ -99,19 +112,6 @@ This homelab spans **two physical locations** connected over ISP uplinks. The pr
 | net-pihole | Pi-hole DNS | 2.0 | 32.0 | no | no | DNS blocker for off-site network |
 | pve-ftp | FTP server | 1.0 | 16.0 | No | no | FTP service for nodes |
 | mon-zabbix | Zabbix monitoring | 4.0 | 16.0 | 256.0 | no | Same config as Node1 VM profile |
-
----
-
-### Node1B — Off-site Compute (Proxmox VE)
-
-| Category | Specification |
-|----------|--------------|
-| Platform | Minisforum MS-A2 |
-| CPU | AMD Ryzen 9 9955HX |
-| RAM | 64 GB DDR5 SO-DIMM |
-| Boot/VM | 2× 1 TB NVMe mirror |
-| NIC | Dual 10G SFP + dual 2.5G LAN |
-| OS | Proxmox VE |
 
 ---
 
