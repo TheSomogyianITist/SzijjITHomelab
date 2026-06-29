@@ -7,16 +7,16 @@ Configuration:
 |----------|--------------|
 | Board        | Supermicro X11DPi-NT |
 | CPU          | 2× Intel Xeon Platinum 8171M |
-| RAM          | 512 GB DDR4 ECC |
-| Boot         | 2× 512 GB NVMe mirror |
+| RAM          | 512 GB DDR4-2666 RDIMM ECC (Now 384GB) |
+| Boot         | 2× 512 GB NVMe mirror (Now 1x 512GB) |
 | VM storage   | 4× 8 TB NVMe RAIDZ1 |
 | SFTP storage | 2× 1 TB NVMe mirror |
 | M.2 Cards    | 2× ASUS Hyper M.2 x16 Card V2 |
 | GPU          | RTX A4500 |
 | NIC inner    | Mellanox MCX4121A-ACAT 25G |
 | NIC outer    | Supermicro AOC-STGN-I2S 10G |
-| PSU          | Seasonic PRIME PX-1600 |
-| Case         | Fractal Design Meshify 2 XL |
+| PSU          | Seasonic PRIME PX-1600 (Now Zalman Watttera 1200W)|
+| Case         | Fractal Design Meshify 2 XL (Now Fractal Design Torrent)|
 
 <details>
 <summary>Node1A VM table</summary>
