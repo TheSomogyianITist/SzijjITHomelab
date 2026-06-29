@@ -96,14 +96,14 @@ The Immich photo and video server VM, providing a self-hosted photo management p
 ## Gaming
 
 ### game-minecraft
-A Minecraft server VM running under Discopanel for management. World data is kept on SSD for low-latency disk access. This VM is sized for a small multiplayer environment.
+A Minecraft server VM running under Discopanel for management. World data is kept on SSD for low-latency disk access and backup on node4 (seaprate hardware pool). This VM is sized for a 4-8 player environment.
 
 ---
 
 ## Web & Networking
 
 ### web-apache-blog / web-apache-blog-2
-Two separate Apache2 web server VMs hosting blog content. They run independently so one can be updated or tested without affecting the other. Blog data lives alongside the system disk with snapshot-based backups.
+Two separate Apache2 web server VMs hosting blog content. I will run two separate website on my server, one of them is rented for my dorm teacher.
 
 ### net-nginx
 The NGINX reverse proxy VM that fronts all internal web UIs and services. It handles TLS termination, routing, and load distribution across the homelab's web-facing services.
