@@ -65,7 +65,7 @@ Two lightweight Windows test client VMs used for testing domain-joined behaviour
 ## Knowledge & Media
 
 ### know-kiwix
-An offline content server running Kiwix, which serves ZIM-format compressed snapshots of websites and reference content entirely without internet access. Useful for air-gapped research, offline Wikipedia access, and resilience testing. ZIM files live on HDD/ZFS to keep large archive files off the fast NVMe pool.
+A Debian-based VM running Kiwix, which serves ZIM-format compressed snapshots of websites and reference content entirely without internet access. Useful for air-gapped research, offline Wikipedia access. (ZIM files live on main system SSD)
 
 ### media-jellyfin
 The Jellyfin media server VM responsible for serving the homelab media library. It has GPU access for hardware-accelerated transcoding and uses NVMe for the transcode cache while media files themselves are streamed from the HDD/ZFS pool on Node3.
