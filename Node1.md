@@ -52,10 +52,10 @@ Configuration:
 ## Workstation & Lab
 
 ### ws-linux-edit
-A high-resource Linux workstation VM designed for video and photo editing and rendering. It receives a GPU passthrough share of the RTX A4500 and a large vCPU and RAM allocation to handle demanding creative workloads. Project files live on a secondary NVMe volume to keep system and data separate.
+A high-resource Fedora workstation VM designed for video and photo editing and rendering. It receives a GPU passthrough share of the RTX A4500 and a large vCPU and RAM allocation to handle demanding creative workloads. Project files live on a 1TB secondary NVMe volume to keep system and data separate.
 
 ### win-lab-dc
-A Windows Server 2019/2022 virtual machine acting as a domain controller for the lab environment. It provides Active Directory, DNS, and DHCP for the Windows lab network. Lab file shares are hosted on HDD/ZFS storage, and a secondary pair of NVMe disks handles additional storage for the domain environment.
+A Windows Server 2019/2022 virtual machine acting as a domain controller for learning. It provides Active Directory, DNS, and DHCP for the Windows lab network. Lab file shares are hosted on HDD/ZFS storage, and 2x 512GB NVMe disks handles additional storage for the domain environment. 
 
 ### win-lab-client1 / win-lab-client2
 Two lightweight Windows test client VMs used for testing domain-joined behaviour, Group Policy, application compatibility, and Windows networking within the lab. They are kept deliberately small so they can be spun up and down without impacting the host significantly.
@@ -68,10 +68,10 @@ Two lightweight Windows test client VMs used for testing domain-joined behaviour
 A Debian-based VM running Kiwix, which serves ZIM-format compressed snapshots of websites and reference content entirely without internet access. Useful for air-gapped research, offline Wikipedia access. (ZIM files live on main system SSD)
 
 ### media-jellyfin
-The Jellyfin media server VM responsible for serving the homelab media library. It has GPU access for hardware-accelerated transcoding and uses NVMe for the transcode cache while media files themselves are streamed from the HDD/ZFS pool on Node3.
+A Ubuntu-based LXC responsible for serving the homelab media library. It has GPU access for hardware-accelerated transcoding and uses A secondary 256GB NVMe for the transcode cache while media files themselves are streamed from the HDD/ZFS pool on Node3.
 
 ### dl-qbittorrent
-A dedicated download VM running qBittorrent, isolated from the rest of the media stack for network policy and resource reasons. Downloads land on HDD/ZFS storage and an optional SSD temp area is available for faster staging.
+A dedicated Ubuntu LXC running qBittorrent, isolated from the rest of the media stack for network policy and resource reasons. Downloads land on HDD/ZFS storage and an optional SSD temp area is available for faster staging.
 
 ### arr-tdarr
 The Tdarr transcoding node, responsible for automated media format conversion and health scanning. It has GPU access for hardware encoding and mounts media read-write to modify files in place. The Tdarr processing cache runs on NVMe for performance.
